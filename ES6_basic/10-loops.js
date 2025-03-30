@@ -10,6 +10,12 @@
 //   return array;
 // }
 
-export default function appendToEachArrayValue(array, appendString) {
-  return array.map(idx => appendString + idx);
+export default function appendToEachArrayValue(array, appendString)
+ {
+  const resultArray = []
+  for (const i of array) {
+    resultArray.push(appendString + i)
+  }
+
+  return resultArray
 }
