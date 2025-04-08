@@ -19,7 +19,7 @@
 // []
 // [ 1, 2, 5 ]
 // bob@dylan:~$
-import * as students from './0-get_list_students';
+import { getListStudents } from './0-get_list_students';
 
 export default function getListStudentsIds() {
   if (!Array.isArray(students)) {
