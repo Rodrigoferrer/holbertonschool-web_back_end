@@ -19,12 +19,10 @@
 // []
 // [ 1, 2, 5 ]
 // bob@dylan:~$
-import { getListStudents } from './0-get_list_students';
-
-export default function getListStudentsIds() {
+export default function getListStudentIds(students) {
   if (!Array.isArray(students)) {
     return [];
   }
-  const studentsId = students.map((student) => student.id);
-  return studentsId;
+
+  return students.map((student) => student.id);
 }
