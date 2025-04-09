@@ -13,10 +13,10 @@
 
 // console.log(value);
 
-// bob@dylan:~$ 
-// bob@dylan:~$ npm run dev 3-main.js 
+// bob@dylan:~$
+// bob@dylan:~$ npm run dev 3-main.js
 // 8
-// bob@dylan:~$ 
+// bob@dylan:~$
 
 export default function getStudentIdsSum(students) {
   return students.reduce((sum, student) => sum + student.id, 0);
