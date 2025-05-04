@@ -32,7 +32,7 @@ class Server:
                 dataset = [row for row in reader]
             self.__dataset = dataset[1:]  # Skip header row
         return self.__dataset
-    
+
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Get a page of the dataset."""
 
@@ -43,7 +43,7 @@ class Server:
         if start_index >= len(dataset):
             return []
         return dataset[start_index:end_index]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """Get a page of the dataset with hypermedia pagination."""
 
