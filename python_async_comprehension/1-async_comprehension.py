@@ -8,9 +8,4 @@ async_generator = __import__('0-async_generator').async_generator
 
 async def async_comprehension() -> List[float]:
     """A list of 10 random float numbers"""
-    numbers = []
-    async for number in async_generator():
-        numbers.append(number)
-        if len(numbers) == 10:
-            break
-    return numbers
+    return [i async for i in async_generator()][:10]
