@@ -1,6 +1,3 @@
-/*
-Funcion that displays a message using console.log
-*/
 
 function displayMessage(message)
 {
